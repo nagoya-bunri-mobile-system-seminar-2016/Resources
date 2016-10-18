@@ -1,15 +1,25 @@
 
-int stepX = 50;
-int stepY = 50;
+int stepX;
+int stepY;
 
-size(800, 400);
-background(0);
-noStroke();
-colorMode(HSB, width, height, 100);
+void setup(){
+  size(800, 400);
+  background(0);
+}
 
-for (int gridY=0; gridY<height; gridY+=stepY){
-  for (int gridX=0; gridX<width; gridX+=stepX){
-    fill(gridX, height-gridY, 100);
-    rect(gridX, gridY, stepX, stepY);
+void draw(){
+  noStroke();
+  colorMode(HSB, width, height, 100);
+
+  stepX = mouseX+2;
+  stepY = mouseY+2;
+  for (int gridY=0; gridY<height; gridY+=stepY){
+    for (int gridX=0; gridX<width; gridX+=stepX){
+      fill(gridX, height-gridY, 100);
+      rect(gridX, gridY, stepX, stepY);
+    }
   }
 }
+
+
+

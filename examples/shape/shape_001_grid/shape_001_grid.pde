@@ -20,7 +20,6 @@ for (int gridY=0; gridY<height; gridY += stepY) {
     //strokeWeight(mouseX/20);
     //line(posX, posY, posX+width/tileCount, posY+height/tileCount);
 
-    
     // ランダムに向きを変えてみる
     int toggle = (int) random(0,2);
 
