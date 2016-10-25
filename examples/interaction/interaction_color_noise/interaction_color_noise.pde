@@ -12,7 +12,7 @@ void draw(){
   colorMode(RGB, 255);
   
   // ランダムの値を毎回同じに設定する
-//  randomSeed(0);
+ randomSeed(0);
   
   stepX = 20;
   stepY = 20;
@@ -28,4 +28,3 @@ void draw(){
     }
   }
 }
-
