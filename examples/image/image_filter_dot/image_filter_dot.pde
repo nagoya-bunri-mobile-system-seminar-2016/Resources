@@ -1,10 +1,9 @@
-
-
 PImage img;
 
 void setup() {
   
   // 画像サイズのアスペクト比と合わせる
+  // 画像の解像度はキャンバスより小さい解像度にする
   size(670, 970); 
   img = loadImage("pic.png");
 }
